@@ -1,0 +1,38 @@
+.cv-header {
+    text-align: left;
+    padding-bottom: 10px;
+  }
+  
+  .cv-name {
+    font-size: 1.5em;
+    margin: 0;
+  }
+  
+  .cv-occupation {
+    font-size: 0.9em;
+    color: #007BFF;
+    margin: 2px 0 5px 0;
+  }
+  
+  .cv-contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    gap: 10px;
+    font-size: 0.6em;
+    color: #666;
+    padding: 0;
+    margin: 0 0 0 0;
+  }
+
+  .cv-contact-info p {
+    margin: 0;
+  }
+
+  .cv-location {
+    font-size: 0.6em;
+    color: #666;
+    padding: 0;
+    margin: 0;
+  }
+  

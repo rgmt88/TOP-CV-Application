@@ -28,7 +28,6 @@ h2 {
   justify-content:baseline;
 }
 
-/* src/styles/CVLayout.css */
 .cv-preview {
   width: 80%; /* Scale width relative to parent container */
   max-width: 500px; /* Set a maximum width to maintain aspect ratio */
