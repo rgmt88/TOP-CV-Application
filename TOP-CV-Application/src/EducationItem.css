@@ -1,0 +1,37 @@
+.education-item {
+    margin: 5px 0;
+  }
+  
+  .education-title-container,
+  .education-details-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin: 2px 0  2px 0;
+  }
+  
+  .education-degree {
+    font-size: 0.9em;
+    color: #666;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .education-years {
+    font-size: 0.9em;
+    color: #666;
+    margin: 0;
+  }
+  
+  .education-school {
+    font-size: 0.8em;
+    color: #007BFF;
+    margin: 0;
+  }
+  
+  .education-location {
+    font-size: 0.8em;
+    color: #666;
+    margin: 0;
+  }
+  
