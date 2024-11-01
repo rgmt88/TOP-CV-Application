@@ -1,0 +1,23 @@
+.cv-summary {
+    margin-top: 0px;
+    font-size: 0.9em;
+    color: #333;
+  }
+  
+  .cv-summary h3 {
+    font-size: 1em;
+    margin: 10px 0 0 0;
+  }
+  
+  .separator {
+    border: none;
+    border-top: 1px solid #ccc; /* Subtle gray line */
+    margin: 5px 0;
+  }
+  
+  .cv-summary p {
+    margin: 0;
+    line-height: 1; 
+    font-size: 0.8em;
+  }
+  
