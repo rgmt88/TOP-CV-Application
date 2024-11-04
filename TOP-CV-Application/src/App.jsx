@@ -1,18 +1,31 @@
+import React, { useState } from 'react';
 import './App.css'
 import CVLayout from './CVLayout';
 import CVHeader from './CVHeader';
+import HeaderForm from './HeaderForm';
 import CVSummary from './CVSummary';
 import ProfessionalExperience from './ProfessionalExperience';
 import Education from './Education';
 
-function App() {
+const App = () => {
+  const [headerData, setHeaderData] = useState({
+    name: '',
+    occupation: '',
+    phone: '',
+    email: '',
+    github: '',
+    location: ''
+  });
+
   return (
     <div>
       <CVLayout
-        inputContent={''}
+        inputContent={
+          <HeaderForm headerData={headerData} setHeaderData={setHeaderData} />
+        }
         outputContent={
         <>
-          <CVHeader />
+          <CVHeader {...headerData} />
           <CVSummary />
           <ProfessionalExperience />
           <Education />
@@ -20,7 +33,7 @@ function App() {
         }
       />
     </div>
-  );
-};
+  )
+}
 
 export default App
