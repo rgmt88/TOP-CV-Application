@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './App.css'
 import CVLayout from './CVLayout';
-import CVHeader from './CVHeader';
 import HeaderForm from './HeaderForm';
+import SummaryForm from './SummaryForm';
+import CVHeader from './CVHeader';
 import CVSummary from './CVSummary';
 import ProfessionalExperience from './ProfessionalExperience';
 import Education from './Education';
@@ -17,16 +18,21 @@ const App = () => {
     location: ''
   });
 
+  const [summaryData, setSummaryData] = useState('');
+
   return (
     <div>
       <CVLayout
         inputContent={
-          <HeaderForm headerData={headerData} setHeaderData={setHeaderData} />
+          <>
+            <HeaderForm headerData={headerData} setHeaderData={setHeaderData} />
+            <SummaryForm summaryData={summaryData} setSummaryData={setSummaryData} />
+          </>
         }
         outputContent={
         <>
           <CVHeader {...headerData} />
-          <CVSummary />
+          <CVSummary summary={summaryData}/>
           <ProfessionalExperience />
           <Education />
         </>

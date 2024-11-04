@@ -1,0 +1,25 @@
+.summary-form {
+    margin-bottom: 20px;
+  }
+  
+  .summary-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .summary-form textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical; /* Allow vertical resizing */
+  }
+  
+  .word-counter {
+    font-size: 0.85em;
+    color: #555;
+    margin-top: 5px;
+  }
+  
