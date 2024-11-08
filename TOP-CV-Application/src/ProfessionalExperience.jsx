@@ -1,8 +1,8 @@
 import JobExperience from "./JobExperience";
 import './ProfessionalExperience.css';
 
-const ProfessionalExperience = () => {
-    const jobs = [
+const ProfessionalExperience = ( { experiences }) => {
+    const placeholderJobs = [
         {
             title: "Software Engineer",
             years: "2019 - Present",
@@ -49,11 +49,13 @@ const ProfessionalExperience = () => {
         },
     ];
 
+    const jobsToDisplay = experiences.length > 0 ? experiences : placeholderJobs;
+
     return (
         <div className="professional-experience">
             <h3>Professional Experience</h3>
             <hr className="separator"/>
-            {jobs.map((job, index) => (
+            {jobsToDisplay.map((job, index) => (
                 <JobExperience 
                     key={index}
                     title={job.title}

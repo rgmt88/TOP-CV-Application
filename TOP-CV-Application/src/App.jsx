@@ -3,6 +3,7 @@ import './App.css'
 import CVLayout from './CVLayout';
 import HeaderForm from './HeaderForm';
 import SummaryForm from './SummaryForm';
+import ProfessionalExperienceSection from './ProfessionalExperienceSection';
 import CVHeader from './CVHeader';
 import CVSummary from './CVSummary';
 import ProfessionalExperience from './ProfessionalExperience';
@@ -20,6 +21,8 @@ const App = () => {
 
   const [summaryData, setSummaryData] = useState('');
 
+  const [experiences, setExperiences] = useState([]);
+
   return (
     <div>
       <CVLayout
@@ -27,13 +30,17 @@ const App = () => {
           <>
             <HeaderForm headerData={headerData} setHeaderData={setHeaderData} />
             <SummaryForm summaryData={summaryData} setSummaryData={setSummaryData} />
+            <ProfessionalExperienceSection
+              experiences={experiences}
+              setExperiences={setExperiences}
+            />
           </>
         }
         outputContent={
         <>
           <CVHeader {...headerData} />
           <CVSummary summary={summaryData}/>
-          <ProfessionalExperience />
+          <ProfessionalExperience experiences={experiences} />
           <Education />
         </>
         }
