@@ -4,9 +4,9 @@ const SummaryForm = ({ summaryData, setSummaryData }) => {
     const handleChange = (e) => {
         const { value } = e.target;
         
-        // Limit to 400 words
+        // Limit to 100 words
         const wordCount = value.split(/\s+/).filter((word) => word).length;
-        if (wordCount <= 400) {
+        if (wordCount <= 100) {
             setSummaryData(value);
         };
     };
@@ -14,7 +14,7 @@ const SummaryForm = ({ summaryData, setSummaryData }) => {
     return (
         <form className="summary-form">
             <div>
-                <label htmlFor="summary">Summary (max 400 words):</label>
+                <label htmlFor="summary">Summary (max 100 words):</label>
                 <textarea
                 id="summary"
                 name="summary"
@@ -25,7 +25,7 @@ const SummaryForm = ({ summaryData, setSummaryData }) => {
                 cols="50"
                 ></textarea>
                 <p className="word-counter">
-                    {400 - summaryData.split(/\s+/).filter((word) => word).length} words remaining
+                    {100 - summaryData.split(/\s+/).filter((word) => word).length} words remaining
                 </p>
             </div>
         </form>

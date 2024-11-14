@@ -1,3 +1,5 @@
+import './HeaderForm.css'
+
 const HeaderForm = ({ headerData, setHeaderData }) => {
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -8,6 +10,8 @@ const HeaderForm = ({ headerData, setHeaderData }) => {
     };
 
     return (
+        <>
+        <h4>Header Data:</h4>
         <form className="header-form">
             <div>
                 <label htmlFor="name">Name:</label>
@@ -76,6 +80,7 @@ const HeaderForm = ({ headerData, setHeaderData }) => {
                 />
             </div>
         </form>
+        </>
     );
 };
 

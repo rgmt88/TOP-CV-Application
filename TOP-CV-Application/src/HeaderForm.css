@@ -1,0 +1,36 @@
+/* src/styles/HeaderForm.css */
+h4 {
+  margin: 0;
+}
+
+.header-form {
+  margin: 5px 0 15px 0;
+}
+
+.header-form div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 5px 0;
+}
+
+.header-form label {
+  flex: 1;
+  text-align: left;
+}
+
+.header-form input {
+  flex: 2;
+  width: 100%; /* Ensures all inputs are the same width */
+  max-width: 300px; /* You can adjust this max width as needed */
+  padding: 8px;
+  font-size: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.header-form input:focus {
+  border-color: #007BFF;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}

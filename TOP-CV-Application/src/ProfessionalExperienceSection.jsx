@@ -28,8 +28,8 @@ const ProfessionalExperienceSection = ({ experiences, setExperiences }) => {
             <h3>Professional Experience</h3>
             {experiences.map((exp, index) => (
                 <div key={index}>
-                    <h4>{exp.title} at {exp.company}</h4>
-                    <p>{exp.years} | {exp.location}</p>
+                    <h4>{exp.title} | {exp.years}</h4>
+                    <p>{exp.company} | {exp.location}</p>
                     <ul>
                         {exp.responsibilities.map((resp, i) => (
                             <li key={i}>{resp}</li>

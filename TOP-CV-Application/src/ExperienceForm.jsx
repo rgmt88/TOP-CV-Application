@@ -34,36 +34,40 @@ const ExperienceForm = ({ onSave, onCancel }) => {
     return (
         <form onSubmit={handleSubmit}>
             <div>
-                <label>Title:</label>
+                <label htmlFor="title">Title:</label>
                 <input
                     type="text"
+                    id="title"
                     name="title"
                     value={experience.title}
                     onChange={handleChange}
                 />
             </div>
             <div>
-                <label>Years:</label>
+                <label htmlFor="years">Years:</label>
                 <input
                     type="text"
+                    id="years"
                     name="years"
                     value={experience.years}
                     onChange={handleChange}
                 />
             </div>
             <div>
-                <label>Company:</label>
+                <label htmlFor="company">Company:</label>
                 <input
                     type="text"
+                    id="company"
                     name="company"
                     value={experience.company}
                     onChange={handleChange}
                 />
             </div>
             <div>
-                <label>Location:</label>
+                <label htmlFor="location">Location:</label>
                 <input
                     type="text"
+                    id="location"
                     name="location"
                     value={experience.location}
                     onChange={handleChange}
@@ -71,9 +75,10 @@ const ExperienceForm = ({ onSave, onCancel }) => {
             </div>
             {experience.responsibilities.map((resp, index) => (
                 <div key={index}>
-                    <label>Responsibility {index + 1}</label>
+                    <label htmlFor={`responsibility-${index}`}>Responsibility {index + 1}</label>
                     <input
                         type="text"
+                        id={`responsibility-${index}`}
                         value={resp}
                         onChange={(e) => handleResponsibilityChange(index, e.target.value)}
                     />

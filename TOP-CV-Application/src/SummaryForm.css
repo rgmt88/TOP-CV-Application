@@ -1,20 +1,27 @@
 .summary-form {
-    margin-bottom: 20px;
+  width: 100%;  
+  margin-bottom: 15px;
+  font-family: Arial, sans-serif;
   }
   
   .summary-form label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
+    font-size: 1em;
   }
   
   .summary-form textarea {
     width: 100%;
+    min-height: 100px;
+    max-height: 200px;
     padding: 8px;
-    font-size: 1em;
+    font-size: 0.8em;
+    font-family: Arial, sans-serif;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical; /* Allow vertical resizing */
+    box-sizing: border-box;
   }
   
   .word-counter {
