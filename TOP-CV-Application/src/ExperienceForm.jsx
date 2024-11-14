@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './ExperienceForm.css';
 
 const ExperienceForm = ({ onSave, onCancel }) => {
     const [experience, setExperience] = useState({
@@ -32,7 +33,7 @@ const ExperienceForm = ({ onSave, onCancel }) => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className="experience-form" onSubmit={handleSubmit}>
             <div>
                 <label htmlFor="title">Title:</label>
                 <input
@@ -75,7 +76,7 @@ const ExperienceForm = ({ onSave, onCancel }) => {
             </div>
             {experience.responsibilities.map((resp, index) => (
                 <div key={index}>
-                    <label htmlFor={`responsibility-${index}`}>Responsibility {index + 1}</label>
+                    <label htmlFor={`responsibility-${index}`}>Responsibility {index + 1}:</label>
                     <input
                         type="text"
                         id={`responsibility-${index}`}

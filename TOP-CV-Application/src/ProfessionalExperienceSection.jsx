@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ExperienceForm from "./ExperienceForm";
+import Modal from "./Modal";
 
 const ProfessionalExperienceSection = ({ experiences, setExperiences }) => {
     const [isFormVisible, setIsFormVisible] = useState(false);
@@ -25,7 +26,7 @@ const ProfessionalExperienceSection = ({ experiences, setExperiences }) => {
 
     return (
         <div>
-            <h3>Professional Experience</h3>
+            <h4>Professional Experience:</h4>
             {experiences.map((exp, index) => (
                 <div key={index}>
                     <h4>{exp.title} | {exp.years}</h4>
@@ -40,13 +41,17 @@ const ProfessionalExperienceSection = ({ experiences, setExperiences }) => {
                     <button onClick={() => removeExperience(index)}>Remove</button>
                 </div>
             ))}
-            {isFormVisible ? (
-                <ExperienceForm
-                    onSave={addExperience}
-                    onCancel={() => setIsFormVisible(false)}
-                />
-            ) : (
-                <button onClick={() => setIsFormVisible(true)} disabled={experiences.length >= maxEntries}>Add Experience</button>
+            <button onClick={() => setIsFormVisible(true)} disabled={experiences.length >= maxEntries}>
+                Add Experience
+            </button>
+
+            {isFormVisible && (
+                <Modal onClose={() => setIsFormVisible(false)}>
+                    <ExperienceForm
+                        onSave={addExperience}
+                        onCancel={() => setIsFormVisible(false)}
+                    />
+                </Modal>
             )}
         </div>
     );
