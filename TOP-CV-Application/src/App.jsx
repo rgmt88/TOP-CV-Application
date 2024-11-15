@@ -4,6 +4,7 @@ import CVLayout from './CVLayout';
 import HeaderForm from './HeaderForm';
 import SummaryForm from './SummaryForm';
 import ProfessionalExperienceSection from './ProfessionalExperienceSection';
+import EducationSection from './EducationSection';
 import CVHeader from './CVHeader';
 import CVSummary from './CVSummary';
 import ProfessionalExperience from './ProfessionalExperience';
@@ -20,8 +21,8 @@ const App = () => {
   });
 
   const [summaryData, setSummaryData] = useState('');
-
   const [experiences, setExperiences] = useState([]);
+  const [educationList, setEducationList] = useState([]);
 
   return (
     <div>
@@ -34,6 +35,10 @@ const App = () => {
               experiences={experiences}
               setExperiences={setExperiences}
             />
+            <EducationSection 
+              educationList={educationList}
+              setEducationList={setEducationList}
+            />
           </>
         }
         outputContent={
@@ -41,7 +46,7 @@ const App = () => {
           <CVHeader {...headerData} />
           <CVSummary summary={summaryData}/>
           <ProfessionalExperience experiences={experiences} />
-          <Education />
+          <Education educationList={educationList} />
         </>
         }
       />

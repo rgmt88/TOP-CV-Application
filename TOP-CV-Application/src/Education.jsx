@@ -1,8 +1,8 @@
 import EducationItem from "./EducationItem";
 import './Education.css';
 
-const Education = () => {
-    const educationList = [
+const Education = ({ educationList }) => {
+    const placeholderEducation = [
         {
             degree: "MS in Computer Science",
             years: "2016 - 2018",
@@ -17,11 +17,13 @@ const Education = () => {
         },
     ];
 
+    const educationDataToDisplay = educationList.length > 0 ? educationList : placeholderEducation;
+
     return (
         <div className="education">
             <h3>Education</h3>
             <hr className="separator" />
-            {educationList.map((edu, index) => (
+            {educationDataToDisplay.map((edu, index) => (
                 <EducationItem 
                     key={index}
                     degree={edu.degree}

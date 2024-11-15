@@ -1,32 +1,31 @@
 .experience-form {
-    margin: 10px 0 20px 0;
+    margin: 20px 0 20px 0;
   }
   
-  .experience-form div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 5px;
-  }
-  
-  .experience-form label {
-    flex: 1;
-    text-align: left;
-  }
-  
-  .experience-form input {
-    flex: 2;
-    width: 100%;
-    max-width: 300px; /* Ensures consistent input width */
-    padding: 8px;
-    font-size: 0.9em;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .experience-form input:focus {
-    border-color: #007BFF;
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
-  }
-  
+.experience-form div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.experience-form label {
+  flex: 1;
+  text-align: left;
+}
+
+.experience-form input {
+  flex: 2;
+  width: 100%;
+  max-width: 300px; /* Ensures consistent input width */
+  padding: 8px;
+  font-size: 0.9em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.experience-form input:focus {
+  border-color: #007BFF;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
