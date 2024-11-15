@@ -1,4 +1,4 @@
-import './JobExperience.css';
+import '../styles/JobExperience.css';
 
 const JobExperience = ( { title, years, company, location, responsibilities }) => {
     return (

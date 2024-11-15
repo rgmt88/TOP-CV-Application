@@ -1,5 +1,5 @@
 import { useState } from "react";
-import './EducationForm.css';
+import '../styles/EducationForm.css';
 
 const EducationForm = ({ onSave, onCancel }) => {
     const [education, setEducation] = useState({

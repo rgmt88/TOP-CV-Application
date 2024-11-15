@@ -1,4 +1,4 @@
-import './SummaryForm.css';
+import '../styles/SummaryForm.css';
 
 const SummaryForm = ({ summaryData, setSummaryData }) => {
     const handleChange = (e) => {

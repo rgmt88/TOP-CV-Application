@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import './ExperienceForm.css';
+import '../styles/ExperienceForm.css';
 
-const ExperienceForm = ({ onSave, onCancel }) => {
-    const [experience, setExperience] = useState({
-        title: '',
-        years: '',
-        company: '',
-        location: '',
-        responsibilities: ['', '', ''],
-    });
+const ExperienceForm = ({ onSave, onCancel, initialData }) => {
+    const [experience, setExperience] = useState(() => ({
+        title: initialData?.title || '',
+        years: initialData?.years || '',
+        company: initialData?.company || '',
+        location: initialData?.location || '',
+        responsibilities: initialData?.responsibilities || ['', '', ''],
+    }));
 
     const handleChange = (e) => {
         const { name, value } = e.target;

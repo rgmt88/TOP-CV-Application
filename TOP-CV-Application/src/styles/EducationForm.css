@@ -24,22 +24,6 @@
     border-radius: 4px;
 }
 
-.education-form button {
-    margin-top: 10px;
-    padding: 8px 12px;
-    font-size: 0.9em;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
 
-.education-form button[type="submit"] {
-    background-color: #007BFF;
-    color: #fff;
-    margin-right: 10px;
-}
 
-.education-form button[type="button"] {
-    background-color: #ccc;
-    color: #333;
-}
+

@@ -1,4 +1,4 @@
-import './CVSummary.css';
+import '../styles/CVSummary.css';
 
 const CVSummary = ({ summary }) => {
     return (

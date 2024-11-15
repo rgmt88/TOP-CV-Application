@@ -1,4 +1,4 @@
-import './CVLayout.css'
+import '../styles/CVLayout.css'
 
 const CVLayout = ({ inputContent, outputContent }) => {
     return (

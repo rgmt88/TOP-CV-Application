@@ -1,5 +1,5 @@
 import JobExperience from "./JobExperience";
-import './ProfessionalExperience.css';
+import '../styles/ProfessionalExperience.css';
 
 const ProfessionalExperience = ( { experiences }) => {
     const placeholderJobs = [

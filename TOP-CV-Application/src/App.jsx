@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import './App.css'
-import CVLayout from './CVLayout';
-import HeaderForm from './HeaderForm';
-import SummaryForm from './SummaryForm';
-import ProfessionalExperienceSection from './ProfessionalExperienceSection';
-import EducationSection from './EducationSection';
-import CVHeader from './CVHeader';
-import CVSummary from './CVSummary';
-import ProfessionalExperience from './ProfessionalExperience';
-import Education from './Education';
+import CVLayout from './components/CVLayout';
+import HeaderForm from './components/HeaderForm';
+import SummaryForm from './components/SummaryForm';
+import ProfessionalExperienceSection from './components/ProfessionalExperienceSection';
+import EducationSection from './components/EducationSection';
+import CVHeader from './components/CVHeader';
+import CVSummary from './components/CVSummary';
+import ProfessionalExperience from './components/ProfessionalExperience';
+import Education from './components/Education';
 
 const App = () => {
   const [headerData, setHeaderData] = useState({

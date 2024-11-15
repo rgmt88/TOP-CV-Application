@@ -1,5 +1,5 @@
 import EducationItem from "./EducationItem";
-import './Education.css';
+import '../styles/Education.css'
 
 const Education = ({ educationList }) => {
     const placeholderEducation = [

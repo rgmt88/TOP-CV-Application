@@ -1,4 +1,4 @@
-import './CVHeader.css';
+import '../styles/CVHeader.css';
 
 const CVHeader = ({ name, occupation, phone, email, github, location }) => {
     return (

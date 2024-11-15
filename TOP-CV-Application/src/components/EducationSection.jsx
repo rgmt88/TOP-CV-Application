@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import EducationForm from './EducationForm';
 import Modal from './Modal';
-import './EducationSection.css'
+import '../styles/EducationSection.css'
 
 const EducationSection = ({ educationList, setEducationList }) => {
     const [isFormVisible, setIsFormVisible] = useState(false);

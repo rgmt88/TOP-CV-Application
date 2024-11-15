@@ -1,4 +1,4 @@
-import './HeaderForm.css'
+import '../styles/HeaderForm.css'
 
 const HeaderForm = ({ headerData, setHeaderData }) => {
     const handleChange = (e) => {

@@ -1,4 +1,4 @@
-import './EducationItem.css';
+import '../styles/EducationItem.css';
 
 const EducationItem = ({ degree, years, school, location }) => {
     return (
