@@ -46,3 +46,42 @@ h2 {
   overflow: hidden;
 }
 
+/* Print styles */
+@media print {
+  body * {
+    visibility: hidden !important; /* Ensure all elements are hidden */
+  }
+
+  .cv-preview,
+  .cv-preview * {
+    visibility: visible !important; /* Ensure the preview and its children are visible */
+  }
+
+  .cv-preview {
+    width: 210mm !important; /* A4 Width */
+    height: 297mm !important; /* A4 Height */
+    margin: 0 !important; /* Remove margins */
+    padding: 5mm !important; /* Add consistent padding */
+    box-shadow: none !important; /* Remove shadow */
+    border: none !important; /* Remove borders */
+    background-color: white !important; /* Ensure white background */
+    overflow: visible !important;
+  }
+
+  .print-button,
+  .input-section,
+  .output-header {
+    display: none !important; /* Ensure these elements do not appear in print */
+  }
+
+  /* Override font styles for print */
+  .cv-preview h2,
+  .cv-preview h3 {
+    font-size: 1.5em !important; /* Ensure headings are readable */
+  }
+
+  .cv-preview p,
+  .cv-preview li {
+    font-size: 1em !important; /* Standardize text size */
+  }
+}

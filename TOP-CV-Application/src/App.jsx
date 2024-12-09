@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './App.css'
-import CVLayout from './components/CVLayout';
 import HeaderForm from './components/HeaderForm';
 import SummaryForm from './components/SummaryForm';
 import ProfessionalExperienceSection from './components/ProfessionalExperienceSection';
@@ -9,6 +8,7 @@ import CVHeader from './components/CVHeader';
 import CVSummary from './components/CVSummary';
 import ProfessionalExperience from './components/ProfessionalExperience';
 import Education from './components/Education';
+import CVLayout from './components/CVLayout';
 
 const App = () => {
   const [headerData, setHeaderData] = useState({
